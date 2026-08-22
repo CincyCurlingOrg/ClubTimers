@@ -11,7 +11,7 @@ import os, sys, time, subprocess, traceback
 GIT_HUB_REPO = "https://github.com/CincyCurlingOrg/ClubTimer.git"          # placeholder: e.g. "git@github.com:yourorg/CurlingTimer.git"
 BRANCH = "CCCRelease"
 REPO_DIR = "/home/jon/CurlingTimer"          # where the repo is cloned/kept on the Pi
-APP_RELATIVE_PATH = "ClubTimer.py"  # entry point inside the repo
+APP_RELATIVE_PATH = "../ClubTimer.py"  # entry point inside the repo
 PYTHON_BIN = sys.executable or "/usr/bin/python3"
 LOG_PATH = "/home/admin/clubtimer_launcher.log"
 
