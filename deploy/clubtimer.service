@@ -9,7 +9,7 @@ User=jon
 # Uncomment if the Pi boots to a desktop/X session rather than the console framebuffer:
 # Environment=DISPLAY=:0
 # Environment=XAUTHORITY=/home/jon/.Xauthority
-ExecStart=/usr/bin/python3 /home/jon/clubtimers/run_clubtimer.py
+ExecStart=/usr/bin/python3 /home/jon/clubtimers/Deploy/run_clubtimer.py
 Restart=always
 RestartSec=5
 StandardOutput=journal
