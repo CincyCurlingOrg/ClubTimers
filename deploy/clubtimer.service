@@ -1,0 +1,19 @@
+[Unit]
+Description=Curling Club Timer
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=jon
+# Uncomment if the Pi boots to a desktop/X session rather than the console framebuffer:
+# Environment=DISPLAY=:0
+# Environment=XAUTHORITY=/home/jon/.Xauthority
+ExecStart=/usr/bin/python3 /home/jon/clubtimers/run_clubtimer.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
